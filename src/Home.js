@@ -22,7 +22,7 @@ function Home() {
                 </p>
             </div>
             <Row className="container2">
-                <Col md={7} style={{paddingBottom: '200px', paddingTop: '200px', alignItems: 'center'}}>
+                <Col md={7} style={{ paddingBottom: '200px', paddingTop: '200px', alignItems: 'center'}}>
                 <h1>Church Building's History</h1>
                 <p style={{paddingTop: '30px'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
@@ -33,12 +33,12 @@ function Home() {
                 </Col>
             </Row>
             <div className="container1">
-                <h1>Christ Church (Drigh Road) is a Diocies Church of Pakistan,</h1>
-                <h1> a church that loves God and people.</h1>
-                <p>The Church of Pakistan is a united Protestant Church in Pakistan, which is part of the Anglican Communion and a member
-                    of the World Communion of Reformed Churches and the World Methodist Council. It was established in 1970 with a union of
-                    Anglicans (Church of India, Pakistan, Burma and Ceylon), Scottish Presbyterians (Church of Scotland), United Methodists, and Lutherans. It is the only united Protestant Church in South Asia which involves Lutherans.
-                </p>
+                <h1>Events</h1>
+                <Row>
+                    <Col className="event-cards" md={4}></Col>
+                    <Col className="event-cards" md={4}></Col>
+                    <Col className="event-cards" md={4}></Col>
+                </Row>
             </div>
             <div className="container3">
                 <h4>EMAIL NEWSLETTER</h4>
