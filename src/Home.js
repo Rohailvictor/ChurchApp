@@ -2,7 +2,11 @@ import React from "react";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import "../src/mediaQuery.css"
-
+import Church from './img/church-img.jpg'
+import BibleStudy2 from './img/Bible-study2.jpg'
+import School from './img/school-img.jpg'
+import AboutUs from "./components/AboutUs";
+import ContactUs from "./components/ContactUs";
 
 function Home() {
     return (
@@ -10,7 +14,15 @@ function Home() {
             <div className="background-img" >
                 <div className="main-head" >
                     <h1 style={{ fontSize: '80px' }}>Christ Church</h1>
-                    <p style={{ fontSize: '40px' }}>Drigh Road</p>
+                    <p style={{ fontSize: '40px' }}>Drigh Road </p>
+                    <div className="btn-div">
+                    <button className="main-btn">
+                        <a href="">Watch Sermons</a>
+                    </button>
+                    <button className="main-btn2">
+                        <a href="">Learn More</a>
+                    </button>
+                    </div>
                 </div>
             </div>
             <div className="container1">
@@ -23,23 +35,50 @@ function Home() {
             </div>
             <Row className="container2">
                 <Col md={7} style={{ paddingBottom: '200px', paddingTop: '200px', alignItems: 'center'}}>
-                <h1>Church Building's History</h1>
-                <p style={{paddingTop: '30px'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                <h1 style={{fontSize: '55px'}}>Church Building's History</h1>
+                <p style={{paddingTop: '30px', paddingLeft: '55px', paddingRight: '55px'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
                     reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                 </Col>
                 <Col md={5} className="church-img">
                 </Col>
             </Row>
-            <div className="container1">
-                <h1>Events</h1>
-                <Row>
-                    <Col className="event-cards" md={4}></Col>
-                    <Col className="event-cards" md={4}></Col>
-                    <Col className="event-cards" md={4}></Col>
-                </Row>
+            <div className="container5">
+                <h1 style={{fontSize: '70px', marginBottom: '40px'}}>Events</h1>
+            <Row className="card-row">
+                    <Col className="event-cards" md={4}>
+                        <img className="card-img" src={ Church } />
+                        <h3>Sunday Service</h3>
+                        <p>Lorem ipsum dolor sit amet</p>
+                        <button className="card-btn">
+                            <a href="">Learn More</a>
+                        </button>
+                    </Col>
+                    <Col className="event-cards" md={4}>
+                    <img className="card-img" src={ School } />
+                        <h3>Methodist School</h3>
+                        <p>Lorem ipsum dolor sit amet</p>
+                        <button className="card-btn">
+                            <a href="">Learn More</a>
+                        </button>
+                    </Col>
+                    <Col className="event-cards" md={4}>
+                    <img className="card-img" src={ BibleStudy2 } />
+                        <h3>Methodist School</h3>
+                        <p>Lorem ipsum dolor sit amet</p>
+                        <button className="card-btn">
+                            <a href="">Learn More</a>
+                        </button>
+                    </Col>
+                   
+            </Row>
+
+            <AboutUs/>
             </div>
+            <ContactUs/>
+
             <div className="container3">
                 <h4>EMAIL NEWSLETTER</h4>
                 <h1 style={{fontSize: '60px', marginBottom: '30px'}}>Stay Connected</h1>
@@ -49,41 +88,7 @@ function Home() {
                 </button>
 
             </div>
-            <div className="container4">
-                <Row>
-                    <Col md={3}>
-                        <h4>ABOUT</h4>
-                        <p>Christ Church's mission is revival the personal, regional, and global expansion of God's kingdom through His manifest presence.</p>
-                       
-                    </Col>
-                    <Col md={3}>
-                        <h4 style={{marginBottom: '20px'}}>CONNECT</h4>
-                        <p>Weekends</p>
-                        <p>Get Involved</p>
-                        <p>Calender</p>
-                        <p>Featured Events</p>
-                        <p>Schools</p>
-                        <p> Contact Us</p>
-                    </Col>
-                    <Col md={3}>
-                        <h4 style={{marginBottom: '20px'}}>MORE</h4>
-                        <p>Give</p>
-                        <p>Careers</p>
-                        <p>News</p>
-                        <p>Privacy</p>
-                        <p>Terms</p>
-                    </Col>
-                    <Col md={3}>
-                        <h4 style={{marginBottom: '20px'}}>SOCIAL</h4>
-                        <p>Facebook</p>
-                        <p>Instagram</p>
-                        <p>Twitter</p>
-                        <p>Youtube</p>
-                    </Col>
-                </Row>
-
-                <p style={{marginTop: '120px'}}>© 2022 Christ Church.com. All Rights Reserved.</p>
-            </div>
+            
         </>
     );
 }

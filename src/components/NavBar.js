@@ -16,8 +16,9 @@ function NavBar() {
           <Nav className="" style={{fontSize: '20px'}}>
             <Nav.Link href="#features">Ministry</Nav.Link>
             <Nav.Link href="#pricing">Events</Nav.Link>
-            <Nav.Link href="#home">About Us</Nav.Link>
-            <Nav.Link href="#pricing">Contact Us</Nav.Link>
+            <Nav.Link href="../components/AboutUS.js">About Us</Nav.Link>
+            <Nav.Link href="./ContactUs">Contact Us</Nav.Link>
+            
           </Nav>
         </Container>
       </Navbar>  
